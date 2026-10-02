@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYKTERIA | Official Store</title>
+    <!-- Clean Futuristic Font -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0B0B0B;
+            color: #FFFFFF;
+        }
+
+        body {
+            padding-bottom: 60px;
+        }
+
+        /* Sleek Modern Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 20px;
+            border-bottom: 1px solid #1A1A1A;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .brand-name {
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 5px;
+            color: #FFFFFF;
+        }
+
+        .cart-icon {
+            font-size: 22px;
+        }
+
+        /* Minimalist Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            border-bottom: 1px solid #1A1A1A;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            letter-spacing: 3px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            color: #777777;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        /* Clean 2-Product Responsive Layout */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: #111111;
+            border: 1px solid #1A1A1A;
+            padding: 16px;
+            border-radius: 0px; /* Sharp edges look more premium */
+            transition: 0.3s ease;
+        }
+
+        .product-card:hover {
+            border-color: #CCFF00; /* Neon Volt Accent on Hover */
+        }
+
+        /* Product Image Box */
+        .product-image {
+            width: 100%;
+            height: 380px;
+            background-color: #161616;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333333;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .product-card * {
+            background-color: transparent;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+            color: #E5E5E5;
+        }
+
+        .product-price {
+            color: #CCFF00; /* Neon Highlight */
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* Premium Minimalist Button */
+        .buy-btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #FFFFFF;
+            color: #0B0B0B;
+            padding: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 14px;
+            transition: 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .buy-btn:hover {
+            background-color: #CCFF00;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 11px;
+            color: #444444;
+            letter-spacing: 2px;
+            border-top: 1px solid #1A1A1A;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="brand-name">NYKTERIA</div>
+        <div class="cart-icon">⚡</div>
+    </header>
+
+    <!-- Main Drop Title -->
+    <section class="hero">
+        <h1>DROP 01 // NIGHTFALL</h1>
+        <p>PREMIUM OVERSIZED STREETWEAR.</p>
+    </section>
+
+    <!-- Two-Product Storefront Section -->
+    <section class="product-grid">
+        
+        <!-- PRODUCT 01 -->
+        <div class="product-card">
+            <div class="product-image">[ OVERSIZED SHIRT IMAGE ]</div>
+            <div class="product-title">OVERSIZED T-SHIRT // 01</div>
+            <div class="product-price">Rs. 999</div>
+            <button class="buy-btn" onclick="alert('Order processing coming next!')">BUY NOW</button>
+        </div>
+
+        <!-- PRODUCT 02 -->
+        <div class="product-card">
+            <div class="product-image">[ DESIGN 02 IMAGE ]</div>
+            <div class="product-title">MIDNIGHT LOGO T-SHIRT // 02</div>
+            <div class="product-price">Rs. 999</div>
+            <button class="buy-btn" onclick="alert('Order processing coming next!')">BUY NOW</button>
+        </div>
+
+    </section>
+
+    <!-- Brand Footer -->
+    <footer>
+        &copy; 2026 NYKTERIA. APPAREL FOR THE NIGHT.
+    </footer>
+
+</body>
+</html>
